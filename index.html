@@ -8,6 +8,7 @@
     src="https://code.jquery.com/jquery-3.3.1.min.js"
     integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
     crossorigin="anonymous"></script>
+  <script src="charts.js"></script>
 
   <style type="text/css">
     svg {
@@ -39,26 +40,19 @@
     /* Data in strings like it would be if imported from a csv */
 
     var data = [
-      {
-        year: "10-15-2018",
-        LOCFloat: "60992",
-        LOCFixed: "19942",
-        RobertsCar: "7726",
-        LauriesCar: "21694",
-        StudentLoan: "2261"
-      },
-      {year: "11-15-2018", LOCFloat: "61427", LOCFixed: "19905", RobertsCar: "7431", LauriesCar: "20918 ", StudentLoan: "2261"},
-      {year: "12-15-2018", LOCFloat: "0", LOCFixed: "0", RobertsCar: "0", LauriesCar: "0", StudentLoan: "0"},
-      {year: "01-15-2019", LOCFloat: "0", LOCFixed: "0", RobertsCar: "0", LauriesCar: "0", StudentLoan: "0"},
-      {year: "02-15-2019", LOCFloat: "0", LOCFixed: "0", RobertsCar: "0", LauriesCar: "0", StudentLoan: "0"},
-      {year: "03-15-2019", LOCFloat: "0", LOCFixed: "0", RobertsCar: "0", LauriesCar: "0", StudentLoan: "0"},
+      { date: "10-15-2018", LOCFloat: "60992", LOCFixed: "19942", RobertsCar: "7726", LauriesCar: "21694", StudentLoan: "2261" },
+      {date: "11-15-2018", LOCFloat: "61427", LOCFixed: "19905", RobertsCar: "7431", LauriesCar: "20918 ", StudentLoan: "2261"},
+      {date: "12-15-2018", LOCFloat: "0", LOCFixed: "0", RobertsCar: "0", LauriesCar: "0", StudentLoan: "0"},
+      {date: "01-15-2019", LOCFloat: "0", LOCFixed: "0", RobertsCar: "0", LauriesCar: "0", StudentLoan: "0"},
+      {date: "02-15-2019", LOCFloat: "0", LOCFixed: "0", RobertsCar: "0", LauriesCar: "0", StudentLoan: "0"},
+      {date: "03-15-2019", LOCFloat: "0", LOCFixed: "0", RobertsCar: "0", LauriesCar: "0", StudentLoan: "0"},
     ];
 
 
     // Transpose the data into layers
     var dataset = d3.layout.stack()(["LOCFloat", "LOCFixed", "RobertsCar", "LauriesCar", "StudentLoan"].map(function (fruit) {
       return data.map(function (d) {
-        return {x: d.year, y: +d[fruit]};
+        return {x: d.date, y: parseFloat(d[fruit])};
       });
     }));
 
