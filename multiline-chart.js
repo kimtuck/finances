@@ -8,6 +8,8 @@ function multiline_chart() {
     { Date: '03/15/2019', LOCFloat: '0', LOCFixed: '0', RobertsCar: '0', LauriesCar: '0', StudentLoan: '0' }
   ];
   const lines = ['LOCFloat', 'LOCFixed', 'RobertsCar', 'LauriesCar', 'StudentLoan', 'Sum'];
+  const labels = ['LOC', 'LOC Loan', "Robert' Car", "Laurie's Car", 'Student Loan', 'Total'];
+  const colors = ['green', 'orange', 'teal', 'blue', 'pink', 'red'];
 
   const margin = { top: 20, right: 20, bottom: 30, left: 50 };
 
@@ -42,11 +44,18 @@ function multiline_chart() {
     });
 
     data.forEach(d => {
-      d['Sum'] = 0;
+      d.Sum = 0;
       d.Sum = lines.reduce((accum, val) => {
         accum += d[val];
         return accum;
       }, 0);
+    });
+
+    data.forEach((d, ind) => {
+      d.color = colors[ind];
+    });
+    data.forEach((d, ind) => {
+      d.label = labels[ind];
     });
 
     // sort years ascending
@@ -56,7 +65,7 @@ function multiline_chart() {
     x.domain(d3.extent(data, d => d.Date));
     y.domain([0, d3.max(data, d => Math.max(...lines.map(x => d[x])))]);
 
-    lines.forEach(line => {
+    lines.forEach((line, ind) => {
       const valueline = d3
         .line()
         .x(d => x(d.Date))
@@ -66,7 +75,8 @@ function multiline_chart() {
         .append('path')
         .data([data])
         .attr('class', 'line')
-        .attr('d', valueline);
+        .attr('d', valueline)
+        .attr('stroke', colors[ind]);
     });
     // Add the X Axis
     svg
@@ -76,6 +86,37 @@ function multiline_chart() {
     // Add the Y Axis
 
     svg.append('g').call(d3.axisLeft(y));
+
+    // Draw legend
+    var legend = svg
+      .selectAll('.legend')
+      .data(colors)
+      .enter()
+      .append('g')
+      .attr('class', 'legend')
+      .attr('transform', function(d, i) {
+        return 'translate(-120,' + i * 19 + ')';
+      });
+
+    legend
+      .append('rect')
+      .attr('x', width - 18)
+      .attr('width', 18)
+      .attr('height', 18)
+      .style('fill', function(d, i) {
+        return colors.slice().reverse()[i];
+      });
+
+    legend
+      .append('text')
+      .attr('x', width + 5)
+      .attr('y', 9)
+      .attr('dy', '.35em')
+      .style('text-anchor', 'start')
+      .text(function(d, i) {
+        console.log(d, i);
+        return labels[labels.length - i - 1];
+      });
   }
 
   draw(data);
