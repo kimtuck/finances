@@ -25,6 +25,7 @@ module.exports = {
     angular: true,
     inject: true,
     module: true,
-    $: true
+    $: true,
+    d3: true
   }
 };

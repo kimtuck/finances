@@ -2,11 +2,11 @@ function graph() {
   /* Data in strings like it would be if imported from a csv */
 
   const data = [
-    { date: '10-15-2018', LOCFloat: '60992', LOCFixed: '19942', RobertsCar: '7726', LauriesCar: '21694', StudentLoan: '2261' },
+    { date: '10-15-2018', LOCFloat: '12', LOCFixed: '19942', RobertsCar: '7726', LauriesCar: '21694', StudentLoan: '2261' },
     { date: '11-15-2018', LOCFloat: '61427', LOCFixed: '19905', RobertsCar: '7431', LauriesCar: '20918 ', StudentLoan: '2261' },
     { date: '12-15-2018', LOCFloat: '0', LOCFixed: '0', RobertsCar: '0', LauriesCar: '0', StudentLoan: '0' },
     { date: '01-15-2019', LOCFloat: '0', LOCFixed: '0', RobertsCar: '0', LauriesCar: '0', StudentLoan: '0' },
-    { date: '02-15-2019', LOCFloat: '0', LOCFixed: '0', RobertsCar: '0', LauriesCar: '0', StudentLoan: '0' },
+    { date: '06-15-2019', LOCFloat: '0', LOCFixed: '0', RobertsCar: '0', LauriesCar: '0', StudentLoan: '0' },
     { date: '03-15-2019', LOCFloat: '0', LOCFixed: '0', RobertsCar: '0', LauriesCar: '0', StudentLoan: '0' }
   ];
 
@@ -32,10 +32,9 @@ function graph() {
     .attr('transform', `translate(${margin.left},${margin.top})`);
 
   // Set x, y and colors
-  const x = d3.scale
-    .ordinal()
-    .domain(dataset[0].map(d => d.x))
-    .rangeRoundBands([10, width - 10], 0.02);
+  var minDate = d3.min(data, x => x.date);
+  var maxDate = d3.max(data, x => x.date);
+  const x = d3.scaleTime.domain(minDate, maxDate);
 
   const y = d3.scale
     .linear()
