@@ -1,4 +1,5 @@
 function multiline_chart() {
+  const lastRealData = 1;
   const data = [
     { Date: '10/15/2018', LOCFloat: '60992', LOCFixed: '19942', RobertsCar: '7726', LauriesCar: '21694', StudentLoan: '2261' },
     { Date: '11/15/2018', LOCFloat: '61427', LOCFixed: '19905', RobertsCar: '7431', LauriesCar: '20918 ', StudentLoan: '2261' },
@@ -34,6 +35,11 @@ function multiline_chart() {
     .append('g')
     .attr('transform', `translate(${margin.left},${margin.top})`);
 
+  // gridlines in y axis function
+  function make_y_gridlines() {
+    return d3.axisLeft(y).ticks(10);
+  }
+
   function draw(data) {
     // format the data
     data.forEach(d => {
@@ -64,6 +70,16 @@ function multiline_chart() {
     // Scale the range of the data
     x.domain(d3.extent(data, d => d.Date));
     y.domain([0, d3.max(data, d => Math.max(...lines.map(x => d[x])))]);
+
+    // add the Y gridlines
+    svg
+      .append('g')
+      .attr('class', 'grid')
+      .call(
+        make_y_gridlines()
+          .tickSize(-width)
+          .tickFormat('')
+      );
 
     lines.forEach((line, ind) => {
       const valueline = d3
@@ -115,7 +131,7 @@ function multiline_chart() {
       .style('text-anchor', 'start')
       .text(function(d, i) {
         console.log(d, i);
-        return labels[labels.length - i - 1];
+        return `${labels[labels.length - i - 1]}  $${data[lastRealData][lines[lines.length - i - 1]]} `;
       });
   }
 
