@@ -1,4 +1,5 @@
 function multiline_chart() {
+  const target = { Date: '12/15/2019', Sum: 80000 };
   const lastRealData = 1;
   const data = [
     { Date: '10/15/2018', LOCFloat: '60992', LOCFixed: '19942', RobertsCar: '7726', LauriesCar: '21694', StudentLoan: '2261' },
@@ -48,6 +49,7 @@ function multiline_chart() {
         d[x] = +d[x];
       });
     });
+    target.Date = parseTime(target.Date);
 
     data.forEach(d => {
       d.Sum = 0;
@@ -68,7 +70,9 @@ function multiline_chart() {
     data.sort((a, b) => a.Date - b.Date);
 
     // Scale the range of the data
-    x.domain(d3.extent(data, d => d.Date));
+    const dates = data.map(x => x.Date);
+    dates.push(target.Date);
+    x.domain(d3.extent(dates, d => d));
     y.domain([0, d3.max(data, d => Math.max(...lines.map(x => d[x])))]);
 
     // add the Y gridlines
@@ -94,6 +98,21 @@ function multiline_chart() {
         .attr('d', valueline)
         .attr('stroke', colors[ind]);
     });
+
+    targetList = [target];
+    targetList.push({ Date: data[0].Date, Sum: data[0].Sum });
+    console.log(targetList);
+    const targetLine = d3
+      .line()
+      .x(d => x(d.Date))
+      .y(d => y(d.Sum));
+    svg
+      .append('path')
+      .data([targetList])
+      .attr('class', 'line')
+      .attr('d', targetLine)
+      .attr('stroke', 'purple');
+
     // Add the X Axis
     svg
       .append('g')
@@ -104,24 +123,20 @@ function multiline_chart() {
     svg.append('g').call(d3.axisLeft(y));
 
     // Draw legend
-    var legend = svg
+    const legend = svg
       .selectAll('.legend')
       .data(colors)
       .enter()
       .append('g')
       .attr('class', 'legend')
-      .attr('transform', function(d, i) {
-        return 'translate(-120,' + i * 19 + ')';
-      });
+      .attr('transform', (d, i) => `translate(-120,${i * 19})`);
 
     legend
       .append('rect')
       .attr('x', width - 18)
       .attr('width', 18)
       .attr('height', 18)
-      .style('fill', function(d, i) {
-        return colors.slice().reverse()[i];
-      });
+      .style('fill', (d, i) => colors.slice().reverse()[i]);
 
     legend
       .append('text')
@@ -129,7 +144,7 @@ function multiline_chart() {
       .attr('y', 9)
       .attr('dy', '.35em')
       .style('text-anchor', 'start')
-      .text(function(d, i) {
+      .text((d, i) => {
         console.log(d, i);
         return `${labels[labels.length - i - 1]}  $${data[lastRealData][lines[lines.length - i - 1]]} `;
       });
