@@ -1,29 +1,17 @@
-function multiline_chart() {
+function multiline_chart(data, lines, labels, colors, layout) {
+  console.log(data);
   const target = { Date: '12/15/2019', Sum: 80000 };
   const lastRealData = 1;
-  const data = [
-    { Date: '10/15/2018', LOCFloat: '60992', LOCFixed: '19942', RobertsCar: '7726', LauriesCar: '21694', StudentLoan: '2261' },
-    { Date: '11/15/2018', LOCFloat: '61427', LOCFixed: '19905', RobertsCar: '7431', LauriesCar: '21208 ', StudentLoan: '2261' },
-    { Date: '12/15/2018', LOCFloat: '63419', LOCFixed: '19865', RobertsCar: '7136', LauriesCar: '20722', StudentLoan: '2261' },
-    { Date: '01/15/2019', LOCFloat: '0', LOCFixed: '0', RobertsCar: '0', LauriesCar: '0', StudentLoan: '0' },
-    { Date: '06/15/2019', LOCFloat: '0', LOCFixed: '0', RobertsCar: '0', LauriesCar: '0', StudentLoan: '0' },
-    { Date: '03/15/2019', LOCFloat: '0', LOCFixed: '0', RobertsCar: '0', LauriesCar: '0', StudentLoan: '0' }
-  ];
-  const lines = ['LOCFloat', 'LOCFixed', 'RobertsCar', 'LauriesCar', 'StudentLoan', 'Sum'];
-  const labels = ['LOC', 'LOC Loan', "Robert' Car", "Laurie's Car", 'Student Loan', 'Total'];
-  const colors = ['green', 'orange', 'teal', 'blue', 'pink', 'red'];
 
-  const margin = { top: 20, right: 20, bottom: 30, left: 50 };
+  const margin = { top: layout.top, right: layout.right, bottom: layout.bottom, left: layout.left };
+  const width = layout.width - margin.left - margin.right;
+  const height = layout.height - margin.top - margin.bottom;
 
-  const width = 960 - margin.left - margin.right;
-
-  const height = 500 - margin.top - margin.bottom;
   // parse the date / time
   const parseTime = d3.timeParse('%m/%d/%Y');
   // set the ranges
   const x = d3.scaleTime().range([0, width]);
   const y = d3.scaleLinear().range([height, 0]);
-  // define the line
 
   // append the svg obgect to the body of the page
   // appends a 'group' element to 'svg'
@@ -41,7 +29,7 @@ function multiline_chart() {
     return d3.axisLeft(y).ticks(10);
   }
 
-  function draw(data) {
+  function draw() {
     // format the data
     data.forEach(d => {
       d.Date = parseTime(d.Date);
@@ -150,7 +138,7 @@ function multiline_chart() {
       });
   }
 
-  draw(data);
+  draw();
 
   /*
   // Get the data
