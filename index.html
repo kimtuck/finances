@@ -7,10 +7,14 @@
           crossorigin="anonymous"></script>
   <script src="https://d3js.org/d3.v4.js"></script>
   <script src="accounts.js"></script>
+  <script src="creditCard.js"></script>
   <script src="multiline-chart.js"></script>
   <style>
     body { margin:0;position:fixed;top:0;right:0;bottom:0;left:0; }
-
+    svg {
+      display: block;
+      margin-bottom:30px;
+    }
     .line {
       fill: none;
       stroke-width: 1.5px;
@@ -27,7 +31,10 @@
 <body>
 <script type="text/javascript">
 
-  $(function() { accounts() });
+  $(function() {
+    accounts()
+    creditCard();
+  });
 
 </script>
 
