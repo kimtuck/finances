@@ -32,8 +32,8 @@ function graph() {
     .attr('transform', `translate(${margin.left},${margin.top})`);
 
   // Set x, y and colors
-  var minDate = d3.min(data, x => x.date);
-  var maxDate = d3.max(data, x => x.date);
+  const minDate = d3.min(data, x => x.date);
+  const maxDate = d3.max(data, x => x.date);
   const x = d3.scaleTime.domain(minDate, maxDate);
 
   const y = d3.scale

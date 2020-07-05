@@ -1,7 +1,6 @@
-function multiline_chart(data, lines, labels, colors, layout) {
+function multiline_chart(data, lines, labels, colors, showTotals, showTarget, layout) {
   console.log(data);
-  const target = { Date: '12/15/2019', Sum: 80000 };
-  const lastRealData = 1;
+  const target = { Date: '12/15/2020', Sum: 60000 };
 
   const margin = { top: layout.top, right: layout.right, bottom: layout.bottom, left: layout.left };
   const width = layout.width - margin.left - margin.right;
@@ -34,7 +33,7 @@ function multiline_chart(data, lines, labels, colors, layout) {
     data.forEach(d => {
       d.Date = parseTime(d.Date);
       lines.forEach(x => {
-        d[x] = +d[x];
+        d[x] = Number.isNaN(d[x]) ? 0 : +d[x];
       });
     });
     target.Date = parseTime(target.Date);
@@ -42,7 +41,7 @@ function multiline_chart(data, lines, labels, colors, layout) {
     data.forEach(d => {
       d.Sum = 0;
       d.Sum = lines.reduce((accum, val) => {
-        accum += d[val];
+        accum += Number.isNaN(d[val]) ? 0 : d[val];
         return accum;
       }, 0);
     });
@@ -87,19 +86,21 @@ function multiline_chart(data, lines, labels, colors, layout) {
         .attr('stroke', colors[ind]);
     });
 
-    targetList = [target];
-    targetList.push({ Date: data[0].Date, Sum: data[0].Sum });
-    console.log(targetList);
-    const targetLine = d3
-      .line()
-      .x(d => x(d.Date))
-      .y(d => y(d.Sum));
-    svg
-      .append('path')
-      .data([targetList])
-      .attr('class', 'line')
-      .attr('d', targetLine)
-      .attr('stroke', 'purple');
+    if (showTarget) {
+      targetList = [target];
+      targetList.push({ Date: data[0].Date, Sum: data[0].Sum });
+      console.log(targetList);
+      const targetLine = d3
+        .line()
+        .x(d => x(d.Date))
+        .y(d => y(d.Sum));
+      svg
+        .append('path')
+        .data([targetList])
+        .attr('class', 'line')
+        .attr('d', targetLine)
+        .attr('stroke', 'purple');
+    }
 
     // Add the X Axis
     svg
@@ -133,8 +134,7 @@ function multiline_chart(data, lines, labels, colors, layout) {
       .attr('dy', '.35em')
       .style('text-anchor', 'start')
       .text((d, i) => {
-        console.log(d, i);
-        return `${labels[labels.length - i - 1]}  $${data[lastRealData][lines[lines.length - i - 1]]} `;
+        return `${labels[labels.length - i - 1]}  $${data[data.length - 1][lines[lines.length - i - 1]]} `;
       });
   }
 
