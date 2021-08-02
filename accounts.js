@@ -151,6 +151,118 @@ function accounts() {
       RobertsCar: '1966', // 295
       LauriesCar: '13191', //416
       StudentLoan: '1261'
+    },
+    {
+      Date: '07/16/2020',
+      LOCFloat: '49815',
+      LOCFixed: '0',
+      RobertsCar: '991', // 295
+      LauriesCar: '12749', //416
+      StudentLoan: '1261'
+    },
+    {
+      Date: '08/16/2020',
+      LOCFloat: '47106',
+      LOCFixed: '0',
+      RobertsCar: '696', // 295
+      LauriesCar: '12333', //416
+      StudentLoan: '1261'
+    },
+    {
+      Date: '09/13/2020',
+      LOCFloat: '46518',
+      LOCFixed: '0',
+      RobertsCar: '401', // 295
+      LauriesCar: '11917', //416
+      StudentLoan: '1261'
+    },
+    {
+      Date: '10/14/2020',
+      LOCFloat: '46430',
+      LOCFixed: '0',
+      RobertsCar: '0', // 295
+      LauriesCar: '11501', //416
+      StudentLoan: '1261'
+    },
+    {
+      Date: '11/15/2020',
+      LOCFloat: '44826',
+      LOCFixed: '0',
+      RobertsCar: '0', // 295
+      LauriesCar: '11085', //416
+      StudentLoan: '1261'
+    },
+    {
+      Date: '12/15/2020',
+      LOCFloat: '42233',
+      LOCFixed: '0',
+      RobertsCar: '0', // 295
+      LauriesCar: '10590', //433 https://myaccount.chryslercapital.com/Account/AccountSummary
+      StudentLoan: '1261'
+    },
+    {
+      Date: '01/15/2021',
+      LOCFloat: '37353',
+      LOCFixed: '0',
+      RobertsCar: '0', // 295
+      LauriesCar: '10000', //433 https://myaccount.chryslercapital.com/Account/AccountSummary
+      StudentLoan: '1261'
+    },
+    {
+      Date: '02/13/2021',
+      LOCFloat: '32633',
+      LOCFixed: '0',
+      RobertsCar: '0', // 295
+      LauriesCar: '9713', //433 https://myaccount.chryslercapital.com/Account/AccountSummary
+      StudentLoan: '1261'
+    },
+    {
+      Date: '03/16/2021',
+      LOCFloat: '30357',
+      LOCFixed: '0',
+      RobertsCar: '0', // 295
+      LauriesCar: '9276', //433 https://myaccount.chryslercapital.com/Account/AccountSummary
+      StudentLoan: '1261'
+    },
+    {
+      Date: '04/17/2021',
+      LOCFloat: '20901',
+      LOCFixed: '0',
+      RobertsCar: '0', // 295
+      LauriesCar: '8830', //433 https://myaccount.chryslercapital.com/Account/AccountSummary
+      StudentLoan: '1261'
+    },
+    {
+      Date: '05/20/2021',
+      LOCFloat: '21366',
+      LOCFixed: '0',
+      RobertsCar: '0', // 295
+      LauriesCar: '8397', //433 https://myaccount.chryslercapital.com/Account/AccountSummary
+      StudentLoan: '1261'
+    },
+    {
+      Date: '06/11/2021',
+      LOCFloat: '18321',
+      LOCFixed: '0',
+      RobertsCar: '0', // 295
+      LauriesCar: '7964', //433 https://myaccount.chryslercapital.com/Account/AccountSummary
+      StudentLoan: '1261'
+    },
+    {
+      Date: '07/12/2021',
+      LOCFloat: '15286',
+      LOCFixed: '0',
+      RobertsCar: '0', // 295
+      LauriesCar: '7470', //433 https://myaccount.chryslercapital.com/Account/AccountSummary
+      StudentLoan: '1261'
+    }, 
+    {
+      Date: '08/01/2021',
+      LOCFloat: '11586',
+      LOCFixed: '0',
+      RobertsCar: '0', // 295
+      LauriesCar: '7470', //433 https://myaccount.chryslercapital.com/Account/AccountSummary
+      StudentLoan: '1261'
     }
   ];
 

@@ -1,6 +1,5 @@
 function multiline_chart(data, lines, labels, colors, showTotals, showTarget, layout) {
-  console.log(data);
-  const target = { Date: '12/15/2020', Sum: 60000 };
+  const target = { Date: '04/01/2022', Sum: 0 };
 
   const margin = { top: layout.top, right: layout.right, bottom: layout.bottom, left: layout.left };
   const width = layout.width - margin.left - margin.right;

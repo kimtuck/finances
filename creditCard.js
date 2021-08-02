@@ -71,6 +71,22 @@ function creditCard() {
     {
       Date: '05/14/2020',
       CreditCard: '2262'
+    },
+    {
+      Date: '08/16/2020',
+      CreditCard: '7638'
+    },
+    {
+      Date: '09/13/2020',
+      CreditCard: '6238'
+    },
+    {
+      Date: '11/15/2020',
+      CreditCard: '6027'
+    },
+    {
+      Date: '12/15/2020',
+      CreditCard: '4484'
     }
   ];
 
