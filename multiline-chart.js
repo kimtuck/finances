@@ -121,20 +121,19 @@ function multiline_chart(data, lines, labels, colors, showTotals, showTarget, la
 
     legend
       .append('rect')
-      .attr('x', width - 18)
+      .attr('x', 300 - 18)
+      .attr('y', 60 - 9)
       .attr('width', 18)
       .attr('height', 18)
       .style('fill', (d, i) => colors.slice().reverse()[i]);
 
     legend
       .append('text')
-      .attr('x', width + 5)
-      .attr('y', 9)
+      .attr('x', 300)
+      .attr('y', 60)
       .attr('dy', '.35em')
       .style('text-anchor', 'start')
-      .text((d, i) => {
-        return `${labels[labels.length - i - 1]}  $${data[data.length - 1][lines[lines.length - i - 1]]} `;
-      });
+      .text((d, i) => `${labels[labels.length - i - 1]}  $${data[data.length - 1][lines[lines.length - i - 1]]} `);
   }
 
   draw();

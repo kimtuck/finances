@@ -69,7 +69,7 @@ function accounts() {
       LOCFloat: '58736',
       LOCFixed: '19627',
       RobertsCar: '5231', // 295
-      LauriesCar: '18543', //400
+      LauriesCar: '18543', // 400
       StudentLoan: '2261'
     },
     {
@@ -77,7 +77,7 @@ function accounts() {
       LOCFloat: '57715',
       LOCFixed: '19587',
       RobertsCar: '4936', // 295
-      LauriesCar: '18143', //400
+      LauriesCar: '18143', // 400
       StudentLoan: '2261'
     },
     {
@@ -85,7 +85,7 @@ function accounts() {
       LOCFloat: '76278',
       LOCFixed: '0',
       RobertsCar: '4641', // 295
-      LauriesCar: '17743', //400
+      LauriesCar: '17743', // 400
       StudentLoan: '1261'
     },
     {
@@ -93,7 +93,7 @@ function accounts() {
       LOCFloat: '76162',
       LOCFixed: '0',
       RobertsCar: '4346', // 295
-      LauriesCar: '17343', //400
+      LauriesCar: '17343', // 400
       StudentLoan: '1261'
     },
     {
@@ -101,7 +101,7 @@ function accounts() {
       LOCFloat: '76748',
       LOCFixed: '0',
       RobertsCar: '4051', // 295
-      LauriesCar: '16943', //400
+      LauriesCar: '16943', // 400
       StudentLoan: '1261'
     },
     {
@@ -109,7 +109,7 @@ function accounts() {
       LOCFloat: '72804',
       LOCFixed: '0',
       RobertsCar: '3756', // 295
-      LauriesCar: '16543', //400
+      LauriesCar: '16543', // 400
       StudentLoan: '1261'
     },
     {
@@ -117,7 +117,7 @@ function accounts() {
       LOCFloat: '67980',
       LOCFixed: '0',
       RobertsCar: '3166', // 295
-      LauriesCar: '14865', //416
+      LauriesCar: '14865', // 416
       StudentLoan: '1261'
     },
     {
@@ -125,7 +125,7 @@ function accounts() {
       LOCFloat: '63451',
       LOCFixed: '0',
       RobertsCar: '2871', // 295
-      LauriesCar: '14499', //416
+      LauriesCar: '14499', // 416
       StudentLoan: '1261'
     },
     {
@@ -133,7 +133,7 @@ function accounts() {
       LOCFloat: '61491',
       LOCFixed: '0',
       RobertsCar: '2576', // 295
-      LauriesCar: '14023', //416
+      LauriesCar: '14023', // 416
       StudentLoan: '1261'
     },
     {
@@ -141,7 +141,7 @@ function accounts() {
       LOCFloat: '57966',
       LOCFixed: '0',
       RobertsCar: '2281', // 295
-      LauriesCar: '13607', //416
+      LauriesCar: '13607', // 416
       StudentLoan: '1261'
     },
     {
@@ -149,7 +149,7 @@ function accounts() {
       LOCFloat: '54326',
       LOCFixed: '0',
       RobertsCar: '1966', // 295
-      LauriesCar: '13191', //416
+      LauriesCar: '13191', // 416
       StudentLoan: '1261'
     },
     {
@@ -157,7 +157,7 @@ function accounts() {
       LOCFloat: '49815',
       LOCFixed: '0',
       RobertsCar: '991', // 295
-      LauriesCar: '12749', //416
+      LauriesCar: '12749', // 416
       StudentLoan: '1261'
     },
     {
@@ -165,7 +165,7 @@ function accounts() {
       LOCFloat: '47106',
       LOCFixed: '0',
       RobertsCar: '696', // 295
-      LauriesCar: '12333', //416
+      LauriesCar: '12333', // 416
       StudentLoan: '1261'
     },
     {
@@ -173,7 +173,7 @@ function accounts() {
       LOCFloat: '46518',
       LOCFixed: '0',
       RobertsCar: '401', // 295
-      LauriesCar: '11917', //416
+      LauriesCar: '11917', // 416
       StudentLoan: '1261'
     },
     {
@@ -181,7 +181,7 @@ function accounts() {
       LOCFloat: '46430',
       LOCFixed: '0',
       RobertsCar: '0', // 295
-      LauriesCar: '11501', //416
+      LauriesCar: '11501', // 416
       StudentLoan: '1261'
     },
     {
@@ -189,7 +189,7 @@ function accounts() {
       LOCFloat: '44826',
       LOCFixed: '0',
       RobertsCar: '0', // 295
-      LauriesCar: '11085', //416
+      LauriesCar: '11085', // 416
       StudentLoan: '1261'
     },
     {
@@ -197,7 +197,7 @@ function accounts() {
       LOCFloat: '42233',
       LOCFixed: '0',
       RobertsCar: '0', // 295
-      LauriesCar: '10590', //433 https://myaccount.chryslercapital.com/Account/AccountSummary
+      LauriesCar: '10590', // 433 https://myaccount.chryslercapital.com/Account/AccountSummary
       StudentLoan: '1261'
     },
     {
@@ -205,7 +205,7 @@ function accounts() {
       LOCFloat: '37353',
       LOCFixed: '0',
       RobertsCar: '0', // 295
-      LauriesCar: '10000', //433 https://myaccount.chryslercapital.com/Account/AccountSummary
+      LauriesCar: '10000', // 433 https://myaccount.chryslercapital.com/Account/AccountSummary
       StudentLoan: '1261'
     },
     {
@@ -213,7 +213,7 @@ function accounts() {
       LOCFloat: '32633',
       LOCFixed: '0',
       RobertsCar: '0', // 295
-      LauriesCar: '9713', //433 https://myaccount.chryslercapital.com/Account/AccountSummary
+      LauriesCar: '9713', // 433 https://myaccount.chryslercapital.com/Account/AccountSummary
       StudentLoan: '1261'
     },
     {
@@ -221,7 +221,7 @@ function accounts() {
       LOCFloat: '30357',
       LOCFixed: '0',
       RobertsCar: '0', // 295
-      LauriesCar: '9276', //433 https://myaccount.chryslercapital.com/Account/AccountSummary
+      LauriesCar: '9276', // 433 https://myaccount.chryslercapital.com/Account/AccountSummary
       StudentLoan: '1261'
     },
     {
@@ -229,7 +229,7 @@ function accounts() {
       LOCFloat: '20901',
       LOCFixed: '0',
       RobertsCar: '0', // 295
-      LauriesCar: '8830', //433 https://myaccount.chryslercapital.com/Account/AccountSummary
+      LauriesCar: '8830', // 433 https://myaccount.chryslercapital.com/Account/AccountSummary
       StudentLoan: '1261'
     },
     {
@@ -237,7 +237,7 @@ function accounts() {
       LOCFloat: '21366',
       LOCFixed: '0',
       RobertsCar: '0', // 295
-      LauriesCar: '8397', //433 https://myaccount.chryslercapital.com/Account/AccountSummary
+      LauriesCar: '8397', // 433 https://myaccount.chryslercapital.com/Account/AccountSummary
       StudentLoan: '1261'
     },
     {
@@ -245,7 +245,7 @@ function accounts() {
       LOCFloat: '18321',
       LOCFixed: '0',
       RobertsCar: '0', // 295
-      LauriesCar: '7964', //433 https://myaccount.chryslercapital.com/Account/AccountSummary
+      LauriesCar: '7964', // 433 https://myaccount.chryslercapital.com/Account/AccountSummary
       StudentLoan: '1261'
     },
     {
@@ -253,15 +253,95 @@ function accounts() {
       LOCFloat: '15286',
       LOCFixed: '0',
       RobertsCar: '0', // 295
-      LauriesCar: '7470', //433 https://myaccount.chryslercapital.com/Account/AccountSummary
+      LauriesCar: '7470', // 433 https://myaccount.chryslercapital.com/Account/AccountSummary
       StudentLoan: '1261'
-    }, 
+    },
     {
       Date: '08/01/2021',
       LOCFloat: '11586',
       LOCFixed: '0',
       RobertsCar: '0', // 295
-      LauriesCar: '7470', //433 https://myaccount.chryslercapital.com/Account/AccountSummary
+      LauriesCar: '7470', // 433 https://myaccount.chryslercapital.com/Account/AccountSummary
+      StudentLoan: '1261'
+    },
+    {
+      Date: '08/16/2021',
+      LOCFloat: '11538',
+      LOCFixed: '0',
+      RobertsCar: '0', // 295
+      LauriesCar: '7072', // 433 https://myaccount.chryslercapital.com/Account/AccountSummary
+      StudentLoan: '1261'
+    },
+    {
+      Date: '09/17/2021',
+      LOCFloat: '9985',
+      LOCFixed: '0',
+      RobertsCar: '0', // 295
+      LauriesCar: '6573', // 433 https://myaccount.chryslercapital.com/Account/AccountSummary
+      StudentLoan: '1261'
+    },
+    {
+      Date: '09/26/2021',
+      LOCFloat: '10285',
+      LOCFixed: '0',
+      RobertsCar: '0', // 295
+      LauriesCar: '6573', // 433 https://myaccount.chryslercapital.com/Account/AccountSummary
+      StudentLoan: '1261'
+    },
+    {
+      Date: '10/11/2021',
+      LOCFloat: '10218',
+      LOCFixed: '0',
+      RobertsCar: '0', // 295
+      LauriesCar: '6573', // 433 https://myaccount.chryslercapital.com/Account/AccountSummary
+      StudentLoan: '1261'
+    },
+    {
+      Date: '10/20/2021',
+      LOCFloat: '10218',
+      LOCFixed: '0',
+      RobertsCar: '0', // 295
+      LauriesCar: '6117', // 433 https://myaccount.chryslercapital.com/Account/AccountSummary
+      StudentLoan: '1261'
+    },
+    {
+      Date: '11/7/2021',
+      LOCFloat: '6650',
+      LOCFixed: '0',
+      RobertsCar: '0', // 295
+      LauriesCar: '6117', // 433 https://myaccount.chryslercapital.com/Account/AccountSummary
+      StudentLoan: '1261'
+    },
+    {
+      Date: '11/21/2021',
+      LOCFloat: '5950',
+      LOCFixed: '0',
+      RobertsCar: '0', // 295
+      LauriesCar: '5659', // 433 https://myaccount.chryslercapital.com/Account/AccountSummary
+      StudentLoan: '1261'
+    },
+    {
+      Date: '12/12/2021',
+      LOCFloat: '1179',
+      LOCFixed: '0',
+      RobertsCar: '0', // 295
+      LauriesCar: '5197', // 433 https://myaccount.chryslercapital.com/Account/AccountSummary
+      StudentLoan: '1261'
+    },
+    {
+      Date: '12/30/2021',
+      LOCFloat: '0',
+      LOCFixed: '0',
+      RobertsCar: '0', // 295
+      LauriesCar: '5197', // 433 https://myaccount.chryslercapital.com/Account/AccountSummary
+      StudentLoan: '1261'
+    },
+    {
+      Date: '2/10/2022',
+      LOCFloat: '0',
+      LOCFixed: '0',
+      RobertsCar: '0', // 295
+      LauriesCar: '0', // 433 https://myaccount.chryslercapital.com/Account/AccountSummary
       StudentLoan: '1261'
     }
   ];
