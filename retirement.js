@@ -1,5 +1,6 @@
 function retirement() {
   const data = [
+    /*
     {
       Date: '1/1/2018',
       savings: '0',
@@ -708,6 +709,7 @@ function retirement() {
       checking: '2427',
       marcus: '225501'
     },
+    */
     {
       Date: '01/01/2024',
       _401K: '185226',
@@ -725,12 +727,332 @@ function retirement() {
       savings: '300.82',
       checking: '2168',
       marcus: '230191'
+    },
+    {
+      Date: '02/08/2024',
+      _401K: '189454',
+      esop: '61214.65',
+      hsa: '5591',
+      savings: '300.82',
+      checking: '2641',
+      marcus: '230191',
+      cc: '-3855'
+    },
+    {
+      Date: '02/24/2024',
+      _401K: '195181',
+      esop: '61214.65',
+      hsa: '5691',
+      savings: '300.82',
+      checking: '8713',
+      marcus: '195191',
+      cc: '-3428'
+    },
+    {
+      Date: '03/1/2024',
+      _401K: '192380',
+      esop: '61214.65',
+      hsa: '5610',
+      savings: '5300.82',
+      checking: '6365',
+      marcus: '195960',
+      cc: '0'
+    },
+    {
+      Date: '03/19/2024',
+      _401K: '195287',
+      esop: '61214.65',
+      hsa: '5710',
+      savings: '300.86',
+      checking: '4908',
+      marcus: '205961',
+      cc: '-1846'
+    },
+    {
+      Date: '04/3/2024',
+      _401K: '196998',
+      esop: '61214.65',
+      hsa: '5710',
+      savings: '300.86',
+      checking: '4239',
+      marcus: '206726',
+      cc: '-4871'
+    },
+    {
+      Date: '05/3/2024',
+      _401K: '197949',
+      esop: '61214.65',
+      hsa: '6080',
+      savings: '2600.86',
+      checking: '3824',
+      marcus: '207458',
+      cc: '-5091'
+    },
+    {
+      Date: '05/17/2024',
+      _401K: '202763',
+      esop: '61214.65',
+      hsa: '5525',
+      savings: '2600.87',
+      checking: '5470',
+      marcus: '207458',
+      cc: '-2333'
+    },
+    {
+      Date: '06/05/2024',
+      _401K: '203029',
+      esop: '61214.65',
+      hsa: '6368',
+      savings: '600.87',
+      checking: '4660',
+      marcus: '211221',
+      cc: '-6887'
+    },
+    {
+      Date: '06/15/2024',
+      _401K: '204130',
+      esop: '61214.65',
+      hsa: '5000',
+      savings: '600.87',
+      checking: '8011',
+      marcus: '211221',
+      cc: '-5181'
+    },
+    {
+      Date: '07/04/2024',
+      _401K: '207672',
+      esop: '61214.65',
+      hsa: '5000',
+      savings: '2600.89',
+      checking: '3121',
+      marcus: '217975',
+      cc: '-4583'
+    },
+    {
+      Date: '07/27/2024',
+      _401K: '209784',
+      esop: '60131.51',
+      hsa: '6434',
+      savings: '3100.89',
+      checking: '933',
+      marcus: '220475',
+      cc: '-5245'
+    },
+    {
+      Date: '07/27/2024',
+      _401K: '209784',
+      esop: '60131.51',
+      hsa: '6434',
+      savings: '3100.89',
+      checking: '933',
+      marcus: '220475',
+      cc: '-5245'
+    },
+    {
+      Date: '08/03/2024',
+      _401K: '209526',
+      esop: '60131.51',
+      hsa: '6313',
+      savings: '95',
+      checking: '2378',
+      marcus: '224280',
+      cc: '-2978'
+    },
+    {
+      Date: '9/03/2024',
+      _401K: '215254',
+      esop: '60131.51',
+      hsa: 2000+5268,
+      savings: '82',
+      checking: '6219',
+      marcus: '223095',
+      cc: '-6159'
+    },
+    {
+      Date: '9/25/2024',
+      _401K: '220215',
+      esop: '60131.51',
+      hsa: 8215,
+      savings: '13',
+      checking: '3275',
+      marcus: '118095',
+      cc: '-2884'
+    },
+    {
+      Date: '10/07/2024',
+      _401K: '221429',
+      esop: '60131.51',
+      hsa: 8586,
+      savings: '48',
+      checking: '1717',
+      marcus: '118708',
+      cc: '-7990'
+    },
+    {
+      Date: '10/21/2024',
+      _401K: '223287',
+      esop: '60131.51',
+      hsa: 9118,
+      savings: '548',
+      checking: '1860',
+      marcus: '115708',
+      cc: '-3658'
+    },
+    {
+      Date: '11/2/2024',
+      _401K: '221491',
+      esop: '60131.51',
+      hsa: 8982,
+      savings: '543',
+      checking: '4978',
+      marcus: '114110',
+      cc: '-2631'
+    },
+    {
+      Date: '11/9/2024',
+      _401K: '225356',
+      esop: '60131.51',
+      hsa: 9335,
+      savings: '243',
+      checking: '4077',
+      marcus: '112610',
+      cc: '-7218'
+    },
+    {
+      Date: '11/15/2024',
+      _401K: '223691',
+      esop: '60131.51',
+      hsa: 9918,
+      savings: '243',
+      checking: '4168',
+      marcus: '112610',
+      cc: '-6874'
+    },
+    {
+      Date: '11/19/2024',
+      _401K: '224278',
+      esop: '60131.51',
+      hsa: 9238,
+      savings: '243',
+      checking: '4168',
+      marcus: '112610',
+      cc: '-6367'
+    },
+    {
+      Date: '12/1/2024',
+      _401K: '227309',
+      esop: '60131.51',
+      hsa: 9757,
+      savings: '238',
+      checking: '4494',
+      marcus: '72938',
+      cc: '-6930'
+    },
+    {
+      Date: '12/14/2024',
+      _401K: '227662',
+      esop: '60131.51',
+      hsa: 9403,
+      savings: '238',
+      checking: '9094',
+      marcus: '72938',
+      cc: '-501'
+    },
+    {
+      Date: '12/17/2024',
+      _401K: '228967',
+      esop: '60131.51',
+      hsa: 9040,
+      savings: '238',
+      checking: '5792',
+      marcus: '72938',
+      cc: '-807'
+    },
+    {
+      Date: '1/4/2025',
+      _401K: '227294',
+      esop: '60131.51',
+      hsa: 9407,
+      savings: '233',
+      checking: '1236',
+      marcus: '82186',
+      cc: '-3829'
+    },
+    {
+      Date: '1/16/2025',
+      _401K: '228446',
+      esop: '60131.51',
+      hsa: 9803,
+      savings: '233',
+      checking: '4916',
+      marcus: '82186',
+      cc: '-1157'
+    },
+    {
+      Date: '2/3/2025',
+      _401K: '232104',
+      esop: '60131.51',
+      hsa: 10334,
+      savings: '328',
+      checking: '5194',
+      marcus: '82453',
+      cc: -3155 + -4025 + -2100 + -9000
+    },
+    {
+      Date: '2/16/2025',
+      _401K: '234770',
+      esop: '60131.51',
+      hsa: 5138+2427,
+      savings: '1328',
+      checking: '3074',
+      marcus: '90453',
+      cc: -3928 + -5751 + -1518
+    },
+    {
+      Date: '3/4/2025',
+      _401K: '233256',
+      esop: '60131.51',
+      hsa: 3993+2347,
+      savings: '353',
+      checking: '3888',
+      marcus: '91715',
+      cc: -2863 + -5751 + -1518 + -4000
+    },
+    {
+      Date: '3/18/2025',
+      _401K: '233126',
+      esop: '60131.51',
+      hsa: 3656+2351,
+      savings: '353',
+      checking: '3205',
+      marcus: '92715',
+      cc: -1194 + -5751 + -1518 + -(4037 - 224)
+    },
+    {
+      Date: '4/2/2025',
+      _401K: '233321',
+      esop: '60131.51',
+      hsa: 5518+2338,
+      savings: '378',
+      checking: '6947',
+      marcus: '93014',
+      cc: -2775 + -5751 + -1518 + -(4037 - 224) /* 3-4 */
+    },
+    {
+      Date: '4/13/2025',
+      _401K: '227194',
+      esop: '60131.51',
+      hsa: 5518+2259,
+      savings: '378',
+      checking: '8931',
+      marcus: 43014+50000,
+      cc: -3495 /*cc*/+ -5751 /*fed*/ + -(4037 - (224 *2)) /* 2nd payment on 4/2 */
     }
   ];
 
-  const lines = ['_401K', 'esop', 'hsa', 'savings', 'checking', 'marcus', 'Sum'];
-  const labels = ['401k', 'ESOP', 'hsa', 'savings', 'checking', 'marcus', 'TOTAL'];
-  const colors = ['blue', 'green', 'orange', 'teal', 'purple', 'deeppink', 'red'];
+  const lines = ['_401K', 'esop', 'hsa', 'savings', 'checking', 'marcus', 'cc', 'Sum'];
+  const labels = ['401k', 'ESOP', 'hsa', 'savings', 'checking', 'marcus', 'Debts', 'TOTAL'];
+  const colors = ['blue', 'green', 'orange', 'teal', 'purple', 'deeppink', 'yellow', 'red'];
 
   const layout = {
     height: 600,

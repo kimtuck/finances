@@ -343,6 +343,14 @@ function accounts() {
       RobertsCar: '0', // 295
       LauriesCar: '0', // 433 https://myaccount.chryslercapital.com/Account/AccountSummary
       StudentLoan: '1261'
+    },
+    {
+      Date: '2/10/2022',
+      LOCFloat: '0',
+      LOCFixed: '0',
+      RobertsCar: '0', // 295
+      LauriesCar: '0', // 433 https://myaccount.chryslercapital.com/Account/AccountSummary
+      StudentLoan: '1261'
     }
   ];
 
