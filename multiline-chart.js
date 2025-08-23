@@ -57,7 +57,7 @@ function multiline_chart(data, lines, labels, colors, showTotals, showTarget, la
 
     // Scale the range of the data
     const dates = data.map(x => x.Date);
-    dates.push(target.Date);
+    //dates.push(target.Date);
     x.domain(d3.extent(dates, d => d));
     y.domain([0, d3.max(data, d => Math.max(...lines.map(x => d[x])))]);
 
